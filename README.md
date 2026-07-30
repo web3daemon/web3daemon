@@ -6,11 +6,14 @@
 </p>
 
 <p align="center">
-  <a href="https://t.me/web3daemon"><img src="https://img.shields.io/badge/Telegram-%40web3daemon-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram @web3daemon"></a>
-  <img src="https://img.shields.io/badge/Available-contract%20%2F%20full--time-2ea44f?style=flat-square" alt="Available for contract or full-time">
+  <a href="#english"><img src="https://img.shields.io/badge/English-24292F?style=for-the-badge&logoColor=white" alt="English"></a>
+  <a href="#russian"><img src="https://img.shields.io/badge/Русский-8B949E?style=for-the-badge&logoColor=white" alt="Русский"></a>
+  <a href="https://t.me/web3daemon"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram @web3daemon"></a>
 </p>
 
 ---
+
+<a name="english"></a>
 
 Most of my work is commercial and private — trading infrastructure, data platforms
 and internal AI services built for clients. Clients come back for a second contract.
@@ -89,18 +92,23 @@ dropped.
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
-<br>
+<p align="center"><sub>Open to backend and AI engineering work — contract or full-time.</sub></p>
 
-<details>
-<summary><b>🇷🇺 Русская версия</b></summary>
+---
 
-<br>
+<a name="russian"></a>
 
-# Backend-инженер — системы реального времени и AI-продукты
+<p align="center">
+  <a href="#english"><img src="https://img.shields.io/badge/English-8B949E?style=for-the-badge&logoColor=white" alt="English"></a>
+  <a href="#russian"><img src="https://img.shields.io/badge/Русский-24292F?style=for-the-badge&logoColor=white" alt="Русский"></a>
+  <a href="https://t.me/web3daemon"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram @web3daemon"></a>
+</p>
 
-Пишу на Python сервисы, которые работают без присмотра: биржевые пайплайны,
-переживающие разрывы связи, асинхронные API, уважающие чужие лимиты, и LLM-системы,
-качество которых измеряется, а не предполагается.
+<p align="center">
+  Пишу на Python сервисы, которые работают без присмотра: биржевые пайплайны,<br>
+  переживающие разрывы связи, асинхронные API, уважающие чужие лимиты,<br>
+  и LLM-системы, качество которых измеряется, а не предполагается.
+</p>
 
 Большая часть работы коммерческая и закрытая — торговая инфраструктура, платформы
 данных и внутренние AI-сервисы под заказчика. Заказчики возвращаются за вторым
@@ -146,18 +154,37 @@ RAG по внутренним базам знаний, агенты с function 
 
 ## 💻 Стек
 
-Python · FastAPI · asyncio · WebSocket · Pydantic
-PostgreSQL · TimescaleDB · SQLAlchemy · Redis
-OpenAI · Claude · Gemini · RAG · векторный поиск · LangChain · MCP · n8n
-Docker · Linux · Nginx · AWS · GitHub Actions
+**Основное**
 
-Открыт к backend- и AI-задачам — контракт или полная занятость.
-Telegram: [@web3daemon](https://t.me/web3daemon)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![asyncio](https://img.shields.io/badge/asyncio-3776AB?style=flat-square)
+![WebSocket](https://img.shields.io/badge/WebSocket-4353FF?style=flat-square)
+![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)
 
-</details>
+**Данные**
 
-<br>
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![TimescaleDB](https://img.shields.io/badge/TimescaleDB-FDB515?style=flat-square&logo=timescale&logoColor=black)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&logo=sqlalchemy&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white)
 
-<p align="center">
-  <sub>Open to backend and AI engineering work — contract or full-time.</sub>
-</p>
+**AI**
+
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-000000?style=flat-square)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![MCP](https://img.shields.io/badge/MCP-000000?style=flat-square)
+![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
+
+**Инфраструктура**
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+
+<p align="center"><sub>Открыт к backend- и AI-задачам — контракт или полная занятость.</sub></p>
