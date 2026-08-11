@@ -13,7 +13,6 @@
   <style>
     @keyframes pulse { 0%, 100% { opacity: .4 } 50% { opacity: 1 } }
     .live { animation: pulse 2.4s ease-in-out infinite; }
-    @media (prefers-reduced-motion: reduce) { .live { animation: none; opacity: 1 } }
   </style>
   <rect x="0.5" y="0.5" width="299" height="55" rx="12" fill="url(#btn)" stroke="#2E2E37"></rect>
   <rect x="0.5" y="0.5" width="299" height="55" rx="12" fill="url(#btnGlow)"></rect>

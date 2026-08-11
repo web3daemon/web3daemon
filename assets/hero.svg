@@ -69,14 +69,6 @@
     .dot-halo  { animation: breathe 2.4s ease-in-out infinite; }
     .name-glow { animation: halo 5s ease-in-out infinite; }
 
-    @media (prefers-reduced-motion: reduce) {
-      .type-mask { animation: none; transform: translateX(413px) }
-      .caret     { animation: none; transform: translateX(413px) }
-      .scan, .glide { animation: none; opacity: 0 }
-      .dot       { animation: none; opacity: 1 }
-      .dot-halo  { animation: none; opacity: .6 }
-      .name-glow { animation: none; opacity: .55 }
-    }
   </style>
 
   <rect width="900" height="300" rx="14" fill="url(#card)"></rect>

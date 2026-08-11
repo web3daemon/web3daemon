@@ -15,7 +15,6 @@
   <style>
     @keyframes glide { 0% { transform: translateX(0) } 60%, 100% { transform: translateX(740px) } }
     .glide { animation: glide 5.5s cubic-bezier(.5,0,.5,1) infinite; }
-    @media (prefers-reduced-motion: reduce) { .glide { animation: none; opacity: 0 } }
   </style>
   <rect y="3.5" width="900" height="1" fill="url(#r)"></rect>
   <rect class="glide" y="3" width="160" height="2" fill="url(#s)" opacity="0.7"></rect>

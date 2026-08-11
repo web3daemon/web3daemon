@@ -24,10 +24,6 @@
     @keyframes pulse  { 0%, 100% { opacity: .45 } 50% { opacity: 1 } }
     .ticker { animation: ticker 36s linear infinite; }
     .live   { animation: pulse 2.4s ease-in-out infinite; }
-    @media (prefers-reduced-motion: reduce) {
-      .ticker { animation: none }
-      .live   { animation: none; opacity: 1 }
-    }
   </style>
   <rect width="900" height="44" rx="10" fill="url(#bg)"></rect>
   <g clip-path="url(#c)"><rect width="900" height="44" fill="url(#glow)"></rect><rect width="3" height="44" fill="#FF1F2E" opacity="0.8"></rect></g>

@@ -16,7 +16,6 @@
     @keyframes barIn { from { transform: scaleY(0) } to { transform: scaleY(1) } }
     .bar { transform-box: fill-box; transform-origin: 50% 0%;
            animation: barIn .8s cubic-bezier(.22,.61,.36,1) both; }
-    @media (prefers-reduced-motion: reduce) { .bar { animation: none } }
   </style>  <rect width="470" height="150" rx="12" fill="url(#bg)"></rect>
   <g clip-path="url(#c)">
     <rect width="470" height="150" fill="url(#grid)"></rect>
