@@ -4,56 +4,40 @@
   <b>English</b>&nbsp; ·&nbsp; <a href="#russian">Русский</a>&nbsp; ·&nbsp; <a href="https://t.me/web3daemon">Telegram</a>
 </p>
 
-<img src="assets/status.svg" alt="Open to work — contract or full-time" width="100%">
+<img src="assets/status.svg" alt="Open to work — contract or full-time. Stack: Python, FastAPI, asyncio, Pydantic, WebSocket, FastStream, aiogram 3, PostgreSQL, TimescaleDB, SQLAlchemy, Redis, OpenAI, Claude, Grok, OpenRouter, RAG, LangChain, MCP, n8n, TypeScript, React, Next.js, Docker, Linux, Nginx, AWS, GitHub Actions" width="100%">
 
 <img src="assets/rule.svg" alt="" width="100%">
 
-### Python Backend / AI Engineer
+I build Python services that run unattended: exchange pipelines that survive disconnects,
+async APIs that respect other people's limits, LLM systems measured rather than assumed.
 
-Services that run unattended: exchange pipelines that survive disconnects, async APIs that
-respect other people's limits, LLM systems measured rather than assumed.
-
-Most of my work is commercial and private — trading infrastructure, data platforms and
-internal AI services built for clients. Clients come back for a second contract. That is the
-metric I care about.
+Most of the work is commercial and private — trading infrastructure, data platforms, internal
+AI services. Clients come back for a second contract. That is the metric I care about.
 
 ## What I build
 
-**Market data in real time**<br>
-WebSocket collectors writing into PostgreSQL / TimescaleDB. Order book reconstructed from
-snapshot and deltas with continuity control, reconnect and rebuild on gaps, candle aggregates
-built by the database itself.
+**Market data** — WebSocket collectors into PostgreSQL / TimescaleDB, order books rebuilt from
+snapshot and deltas, gaps repaired on reconnect.
 
-**Exchange integration at scale**<br>
-A single execution interface behind 11 venues — per-exchange WebSocket clients and error
-taxonomies, shared retry and stream-health watchdogs. The next exchange is a module, not a
-rewrite.
+**Exchanges** — one execution interface behind 11 venues, per-venue error taxonomies under
+shared retry and watchdogs.
 
-**Backend and APIs**<br>
-FastAPI, async SQLAlchemy, SSE with polling fallback, JWT, background workers, idempotent
-pipelines with multi-level deduplication. Docker, CI, tests as a default, not a favour.
+**Backend** — FastAPI, async SQLAlchemy, SSE with polling fallback, background workers,
+idempotent pipelines.
 
-**AI systems**<br>
-RAG over internal knowledge bases, agents with function calling and structured output, model
-routing with fallbacks, conversation memory, cost accounting per user.
+**AI** — RAG over internal knowledge bases, function calling with structured output, model
+routing with fallbacks, per-user cost accounting.
 
-## Problems I've solved
+## Two problems that weren't obvious
 
-**A blind, rate-limited external API.**<br>
-No total count, no cursor, aggressive `429`. Built a token-bucket client with retries, honest
-`403` cooldown, and live progress over SSE that silently falls back to polling where SSE is
-blocked.
+**Billing that counted silence.**<br>
+A platform's four-second window started when a message was *fetched*, not answered — so the
+obvious `poll → llm → reply` loop was donating paid conversations to its own auto-responder.
+I split polling from processing and turned the uncovered time into a metric.
 
-**An agent platform that charged for silence.**<br>
-Its 4-second window counted to the moment a message was *fetched*, not answered — so the
-obvious `poll → llm → reply` loop handed paid conversations to the platform's own responder.
-Separated polling from processing and exposed the uncovered time as a metric, turning an
-invisible cost into an alert.
-
-**Imports that could not be trusted twice.**<br>
-Multi-level deduplication and validation across two sources, idempotent by construction:
-re-running the pipeline changes nothing, and every anomaly in the source data is documented
-rather than silently dropped.
+**An API with no counter and no cursor.**<br>
+Nothing to page by, aggressive `429`. Token-bucket client with honest `403` cooldown, and live
+progress over SSE that falls back to polling where SSE is blocked.
 
 ## Selected work
 
@@ -80,16 +64,6 @@ rather than silently dropped.
 
 <sub>· <a href="https://github.com/web3daemon?tab=repositories">All repositories</a></sub>
 
-## Stack
-
-| | |
-| :-- | :-- |
-| **Core** | Python · FastAPI · asyncio · Pydantic · WebSocket · FastStream · aiogram 3 |
-| **Data** | PostgreSQL · TimescaleDB · SQLAlchemy · Redis |
-| **AI** | OpenAI · Claude · Grok · OpenRouter · RAG · LangChain · MCP · n8n |
-| **Web** | TypeScript · React · Next.js |
-| **Infrastructure** | Docker · Linux · Nginx · AWS · GitHub Actions |
-
 ## Contact
 
 <a href="https://t.me/web3daemon"><img src="assets/btn-telegram.svg" alt="Telegram @web3daemon"></a>
@@ -105,79 +79,53 @@ Open to backend and AI engineering work — contract or full-time.
 
 <br>
 
-### Python Backend / AI Engineer
+Пишу на Python сервисы, которые работают без присмотра: биржевые пайплайны, переживающие
+разрывы связи, асинхронные API, уважающие чужие лимиты, и LLM-системы, качество которых
+измеряется, а не предполагается.
 
-Сервисы, которые работают без присмотра: биржевые пайплайны, переживающие разрывы связи,
-асинхронные API, уважающие чужие лимиты, и LLM-системы, качество которых измеряется,
-а не предполагается.
-
-Большая часть работы коммерческая и закрытая — торговая инфраструктура, платформы данных
-и внутренние AI-сервисы под заказчика. Заказчики возвращаются за вторым контрактом.
-Это та метрика, которая меня интересует.
+Большая часть работы коммерческая и закрытая — торговая инфраструктура, платформы данных,
+внутренние AI-сервисы. Заказчики возвращаются за вторым контрактом. Это та метрика, которая
+меня интересует.
 
 ## Что делаю
 
-**Рыночные данные в реальном времени**<br>
-WebSocket-коллекторы с записью в PostgreSQL / TimescaleDB. Стакан реконструируется из
-снапшота и дельт с контролем непрерывности, при разрыве — переподключение и пересборка,
-свечные агрегаты строит сама база.
+**Рыночные данные** — WebSocket-коллекторы в PostgreSQL / TimescaleDB, стакан собирается из
+снапшота и дельт, разрывы чинятся переподключением.
 
-**Интеграция с биржами**<br>
-Единый интерфейс исполнения поверх 11 площадок — свой WebSocket-клиент и своя таксономия
-ошибок на каждую биржу, общий retry и watchdog состояния стрима. Следующая биржа — это
-новый модуль, а не переписывание.
+**Биржи** — единый интерфейс исполнения поверх 11 площадок, своя таксономия ошибок на каждую
+под общим retry и watchdog.
 
-**Backend и API**<br>
-FastAPI, асинхронный SQLAlchemy, SSE с фолбэком на polling, JWT, фоновые воркеры,
-идемпотентные пайплайны с многоуровневой дедупликацией. Docker, CI и тесты — норма,
-а не одолжение.
+**Backend** — FastAPI, асинхронный SQLAlchemy, SSE с фолбэком на polling, фоновые воркеры,
+идемпотентные пайплайны.
 
-**AI-системы**<br>
-RAG по внутренним базам знаний, агенты с function calling и structured output, маршрутизация
-моделей с fallback, память диалога, учёт стоимости по пользователям.
+**AI** — RAG по внутренним базам знаний, function calling со структурированным выводом,
+маршрутизация моделей с fallback, учёт стоимости по пользователям.
 
-## Задачи, которые решал
+## Две неочевидные задачи
 
-**Внешнее API, работающее вслепую и под лимитом.**<br>
-Ни общего количества, ни курсора, жёсткие `429`. Сделал клиент с token-bucket, повторами,
-честным простоем по `403` и живым прогрессом через SSE, который незаметно переходит на
-polling там, где SSE заблокирован.
+**Тарификация, которая считала молчание.**<br>
+Четырёхсекундное окно платформы начиналось в момент, когда сообщение *забрали*, а не когда
+ответили — поэтому очевидный цикл `poll → llm → reply` дарил платные диалоги её собственному
+авто-ответчику. Разделил опрос и обработку, непокрытое время вывел в метрику.
 
-**Платформа агентов, бравшая деньги за молчание.**<br>
-Её четырёхсекундное окно отсчитывалось до момента, когда сообщение *забрали*, а не ответили
-на него — поэтому очевидный цикл `poll → llm → reply` отдавал платные диалоги встроенному
-авто-ответчику. Разделил опрос и обработку, а непокрытое время вывел в метрику, превратив
-невидимые расходы в алерт.
-
-**Импорт, которому нельзя доверять дважды.**<br>
-Многоуровневая дедупликация и валидация по двум источникам, идемпотентность по построению:
-повторный запуск ничего не меняет, а каждая аномалия в исходных данных задокументирована,
-а не отброшена молча.
+**API без счётчика и без курсора.**<br>
+Пагинировать не по чему, жёсткие `429`. Клиент с token-bucket и честным простоем по `403`,
+живой прогресс через SSE с переходом на polling там, где SSE заблокирован.
 
 ## Избранные проекты
 
 | Проект | Стек | Что это |
 | :-- | :-- | :-- |
-| **[zero-block-sniper-reverse-engineering](https://github.com/web3daemon/zero-block-sniper-reverse-engineering)** | Python | Реверс-инжиниринг zero-block снайпера pump.fun на Solana: поведенческий анализ, интерпретируемая модель отбора и стратегия-реплика с честным бэктестом. |
-| **[file-stats-service](https://github.com/web3daemon/file-stats-service)** | Python · React | Скачивает вслепую пагинированный каталог файлов под рейт-лимитом и считает статистику цифр. Клиент с token-bucket и обработкой `429` / `403`, прогресс по SSE с фолбэком на polling, Docker, CI. |
-| **[vibe-agent-runtime](https://github.com/web3daemon/vibe-agent-runtime)** | Python | Рантайм агента, не оставляющий опрос без обработки — опрос отделён от обработки, поэтому платный авто-ответчик платформы не срабатывает. Плюс шесть находок по Agent API. |
-| **[kttx-test-task](https://github.com/web3daemon/kttx-test-task)** | Python | Асинхронная обработка платежей: FastAPI пишет платёж и событие в одной транзакции (transactional outbox), консьюмер на FastStream доставляет подписанные вебхуки с ретраями через TTL-очередь и DLQ. |
-| **[polza-test-task](https://github.com/web3daemon/polza-test-task)** | TypeScript | JSON + CSV в PostgreSQL с трёхуровневой дедупликацией, валидацией и идемпотентными перезапусками, три аналитических запроса и страница `/companies` на Next.js App Router. |
-| **[tg-ai-assistant](https://github.com/web3daemon/tg-ai-assistant)** | Python | Приватный Telegram AI-ассистент на aiogram 3 и OpenRouter: текст, документы, изображения и голос, фоновая очередь для тяжёлой медиа, скользящая память, маршрутизация моделей с fallback. |
-| **[bitget](https://github.com/web3daemon/bitget)** | Python | Минимальная обёртка над Bitget V2 USDT-M futures API — подпись запросов HMAC, аккаунт, позиции, ордера и TP/SL, по умолчанию demo trading. |
+| **[zero-block-sniper-reverse-engineering](https://github.com/web3daemon/zero-block-sniper-reverse-engineering)** | Python | Реверс-инжиниринг zero-block снайпера pump.fun на Solana: поведенческий анализ, интерпретируемая модель отбора, стратегия-реплика с честным бэктестом. |
+| **[file-stats-service](https://github.com/web3daemon/file-stats-service)** | Python · React | Слепо пагинированный каталог под рейт-лимитом: token-bucket, обработка `429` / `403`, прогресс по SSE с фолбэком на polling. |
+| **[vibe-agent-runtime](https://github.com/web3daemon/vibe-agent-runtime)** | Python | Рантайм агента: опрос отделён от обработки, поэтому платный авто-ответчик платформы не срабатывает. Плюс шесть находок по Agent API. |
+| **[kttx-test-task](https://github.com/web3daemon/kttx-test-task)** | Python | Асинхронные платежи: transactional outbox в одной транзакции, консьюмер на FastStream, подписанные вебхуки с ретраями через TTL-очередь и DLQ. |
+| **[polza-test-task](https://github.com/web3daemon/polza-test-task)** | TypeScript | JSON + CSV в PostgreSQL с трёхуровневой дедупликацией и идемпотентными перезапусками, три аналитических запроса, страница на Next.js. |
+| **[tg-ai-assistant](https://github.com/web3daemon/tg-ai-assistant)** | Python | Telegram AI-ассистент на aiogram 3 и OpenRouter: текст, документы, изображения и голос, фоновая очередь, скользящая память, маршрутизация моделей. |
+| **[bitget](https://github.com/web3daemon/bitget)** | Python | Обёртка над Bitget V2 USDT-M futures API — подпись HMAC, аккаунт, позиции, ордера и TP/SL, по умолчанию demo trading. |
 | **[proxy6-telegram-bot](https://github.com/web3daemon/proxy6-telegram-bot)** | Python | Бот на aiogram 3 для управления прокси-серверами на PROXY6. |
 
 <sub>· <a href="https://github.com/web3daemon?tab=repositories">Все репозитории</a></sub>
-
-## Стек
-
-| | |
-| :-- | :-- |
-| **Основное** | Python · FastAPI · asyncio · Pydantic · WebSocket · FastStream · aiogram 3 |
-| **Данные** | PostgreSQL · TimescaleDB · SQLAlchemy · Redis |
-| **AI** | OpenAI · Claude · Grok · OpenRouter · RAG · LangChain · MCP · n8n |
-| **Web** | TypeScript · React · Next.js |
-| **Инфраструктура** | Docker · Linux · Nginx · AWS · GitHub Actions |
 
 ## Контакты
 
