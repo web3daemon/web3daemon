@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 150" width="470" height="150" role="img" aria-label="bitget">
+  <title>bitget</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#0C0C10"></stop><stop offset="100%" stop-color="#08080A"></stop>
+    </linearGradient>
+    <radialGradient id="g" cx="0%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#FF1F2E" stop-opacity="0.16"></stop><stop offset="100%" stop-color="#FF1F2E" stop-opacity="0"></stop>
+    </radialGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0 L0 0 0 24" fill="none" stroke="#FFFFFF" stroke-opacity="0.022" stroke-width="1"></path>
+    </pattern>
+    <clipPath id="c"><rect width="470" height="150" rx="12"></rect></clipPath>
+  </defs>
+  <style>
+    @keyframes barIn { from { transform: scaleY(0) } to { transform: scaleY(1) } }
+    .bar { transform-box: fill-box; transform-origin: 50% 0%;
+           animation: barIn .8s cubic-bezier(.22,.61,.36,1) both; }
+    @media (prefers-reduced-motion: reduce) { .bar { animation: none } }
+  </style>  <rect width="470" height="150" rx="12" fill="url(#bg)"></rect>
+  <g clip-path="url(#c)">
+    <rect width="470" height="150" fill="url(#grid)"></rect>
+    <rect width="470" height="150" fill="url(#g)"></rect>
+    <rect class="bar" x="0" y="0" width="2" height="150" fill="#FF1F2E" opacity="0.8"></rect>
+  </g>
+  <rect x="0.5" y="0.5" width="469" height="149" rx="12" fill="none" stroke="#22222A"></rect>
+  <text x="26" y="42" font-family="ui-monospace,&#39;SF Mono&#39;,SFMono-Regular,Menlo,Consolas,&#39;Liberation Mono&#39;,&#39;DejaVu Sans Mono&#39;,monospace" font-size="17" font-weight="700" fill="#F4F1EC">bitget</text>
+  <circle cx="30" cy="66" r="4" fill="#3776AB"></circle>
+  <text x="42" y="70" font-family="ui-monospace,&#39;SF Mono&#39;,SFMono-Regular,Menlo,Consolas,&#39;Liberation Mono&#39;,&#39;DejaVu Sans Mono&#39;,monospace" font-size="12" letter-spacing="1" fill="#8A8A95">Python</text>
+  <text x="26" y="100" font-family="ui-monospace,&#39;SF Mono&#39;,SFMono-Regular,Menlo,Consolas,&#39;Liberation Mono&#39;,&#39;DejaVu Sans Mono&#39;,monospace" font-size="12" fill="#6E6E78">Minimal wrapper for the Bitget V2 USDT-M futures API —</text>
+  <text x="26" y="119" font-family="ui-monospace,&#39;SF Mono&#39;,SFMono-Regular,Menlo,Consolas,&#39;Liberation Mono&#39;,&#39;DejaVu Sans Mono&#39;,monospace" font-size="12" fill="#6E6E78">HMAC signing, account, positions, orders and TP/SL,</text>
+  <text x="26" y="138" font-family="ui-monospace,&#39;SF Mono&#39;,SFMono-Regular,Menlo,Consolas,&#39;Liberation Mono&#39;,&#39;DejaVu Sans Mono&#39;,monospace" font-size="12" fill="#6E6E78">defaulting to demo trading.</text>
+</svg>

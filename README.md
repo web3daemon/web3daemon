@@ -4,6 +4,8 @@
   <b>English</b>&nbsp; ·&nbsp; <a href="#russian">Русский</a>&nbsp; ·&nbsp; <a href="https://t.me/web3daemon">Telegram</a>
 </p>
 
+<img src="assets/status.svg" alt="Open to work — contract or full-time" width="100%">
+
 <img src="assets/rule.svg" alt="" width="100%">
 
 ### Python Backend / AI Engineer
@@ -55,16 +57,26 @@ rather than silently dropped.
 
 ## Selected work
 
-| Project | Stack | What it is |
-| :-- | :-- | :-- |
-| **[zero-block-sniper-reverse-engineering](https://github.com/web3daemon/zero-block-sniper-reverse-engineering)** | Python | Reverse-engineering a zero-block pump.fun sniper on Solana: behavioural analysis, an interpretable selection model, and a replica strategy with an honest backtest. |
-| **[file-stats-service](https://github.com/web3daemon/file-stats-service)** | Python · React | Downloads a blindly paginated, rate-limited file catalogue and reports digit statistics. Token-bucket client with `429` / `403` handling, SSE progress with polling fallback, Docker, CI. |
-| **[vibe-agent-runtime](https://github.com/web3daemon/vibe-agent-runtime)** | Python | Agent runtime that never leaves a poll unparked — polling separated from processing so the platform's paid auto-responder never fires. Ships six findings on the Agent API. |
-| **[kttx-test-task](https://github.com/web3daemon/kttx-test-task)** | Python | Asynchronous payment processing: FastAPI writes the payment and its event in one transaction (transactional outbox), a FastStream consumer delivers signed webhooks with TTL-queue retries and a DLQ. |
-| **[polza-test-task](https://github.com/web3daemon/polza-test-task)** | TypeScript | JSON + CSV to PostgreSQL with three-level deduplication, validation and idempotent re-runs, three analytical queries, and a `/companies` page on Next.js App Router. |
-| **[tg-ai-assistant](https://github.com/web3daemon/tg-ai-assistant)** | Python | Private Telegram AI assistant on aiogram 3 and OpenRouter: text, documents, images and voice, background queue for heavy media, rolling memory, model routing with fallbacks. |
-| **[bitget](https://github.com/web3daemon/bitget)** | Python | Minimal wrapper for the Bitget V2 USDT-M futures API — HMAC request signing, account, positions, orders and TP/SL, defaulting to demo trading. |
-| **[proxy6-telegram-bot](https://github.com/web3daemon/proxy6-telegram-bot)** | Python | aiogram 3 bot for managing proxy servers on PROXY6. |
+<table>
+<tbody>
+  <tr>
+    <td width="50%"><a href="https://github.com/web3daemon/zero-block-sniper-reverse-engineering"><img src="assets/repo-zero-block-sniper-reverse-engineering.svg" alt="zero-block-sniper-reverse-engineering" width="100%"></a></td>
+    <td width="50%"><a href="https://github.com/web3daemon/file-stats-service"><img src="assets/repo-file-stats-service.svg" alt="file-stats-service" width="100%"></a></td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="https://github.com/web3daemon/vibe-agent-runtime"><img src="assets/repo-vibe-agent-runtime.svg" alt="vibe-agent-runtime" width="100%"></a></td>
+    <td width="50%"><a href="https://github.com/web3daemon/kttx-test-task"><img src="assets/repo-kttx-test-task.svg" alt="kttx-test-task" width="100%"></a></td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="https://github.com/web3daemon/polza-test-task"><img src="assets/repo-polza-test-task.svg" alt="polza-test-task" width="100%"></a></td>
+    <td width="50%"><a href="https://github.com/web3daemon/tg-ai-assistant"><img src="assets/repo-tg-ai-assistant.svg" alt="tg-ai-assistant" width="100%"></a></td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="https://github.com/web3daemon/bitget"><img src="assets/repo-bitget.svg" alt="bitget" width="100%"></a></td>
+    <td width="50%"><a href="https://github.com/web3daemon/proxy6-telegram-bot"><img src="assets/repo-proxy6-telegram-bot.svg" alt="proxy6-telegram-bot" width="100%"></a></td>
+  </tr>
+</tbody>
+</table>
 
 <sub>· <a href="https://github.com/web3daemon?tab=repositories">All repositories</a></sub>
 
