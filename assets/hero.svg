@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" aria-label="web3daemon — Python Backend / AI Engineer">
+  <title>web3daemon — Python Backend / AI Engineer</title>
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#0B0B0E"></stop>
+      <stop offset="100%" stop-color="#08080A"></stop>
+    </linearGradient>
+    <radialGradient id="pool" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF1F2E" stop-opacity="0.34"></stop>
+      <stop offset="55%" stop-color="#FF1F2E" stop-opacity="0.08"></stop>
+      <stop offset="100%" stop-color="#FF1F2E" stop-opacity="0"></stop>
+    </radialGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF1F2E" stop-opacity="0.9"></stop>
+      <stop offset="14%" stop-color="#FF1F2E" stop-opacity="0.35"></stop>
+      <stop offset="45%" stop-color="#8A8A95" stop-opacity="0.28"></stop>
+      <stop offset="100%" stop-color="#8A8A95" stop-opacity="0"></stop>
+    </linearGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF3B45" stop-opacity="0"></stop>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1"></stop>
+      <stop offset="100%" stop-color="#FF3B45" stop-opacity="0"></stop>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF1F2E" stop-opacity="0"></stop>
+      <stop offset="70%" stop-color="#FF1F2E" stop-opacity="0.18"></stop>
+      <stop offset="100%" stop-color="#FF6B72" stop-opacity="0.55"></stop>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.05"></stop>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"></stop>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0 L0 0 0 36" fill="none" stroke="#FFFFFF" stroke-opacity="0.028" stroke-width="1"></path>
+    </pattern>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="9"></feGaussianBlur>
+    </filter>
+    <filter id="tight" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+    </filter>
+    <clipPath id="cardClip"><rect width="900" height="300" rx="14"></rect></clipPath>
+    <clipPath id="typeClip">
+      <rect x="64" y="234" height="22" width="0">
+        
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect width="900" height="300" rx="14" fill="url(#card)"></rect>
+  <g clip-path="url(#cardClip)">
+    <rect width="900" height="300" fill="url(#grid)"></rect>
+    <ellipse cx="120" cy="286" rx="420" ry="150" fill="url(#pool)">
+      
+    </ellipse>
+    <rect x="0" y="0" width="900" height="300" fill="url(#fade)"></rect>
+    <rect x="-260" y="0" width="260" height="300" fill="url(#scan)" opacity="0.9">
+      
+    </rect>
+    <rect x="0" y="0" width="3" height="300" fill="#FF1F2E" opacity="0.75"></rect>
+  </g>
+  <rect x="0.5" y="0.5" width="899" height="299" rx="14" fill="none" stroke="#22222A"></rect>
+
+  <circle cx="68" cy="62" r="4" fill="#FF1F2E" filter="url(#soft)" opacity="0.9"></circle>
+  <circle cx="68" cy="62" r="4" fill="#FF1F2E">
+    
+    
+  </circle>
+  <text x="86" y="67" font-family="ui-monospace,&#39;SF Mono&#39;,SFMono-Regular,Menlo,Consolas,&#39;Liberation Mono&#39;,&#39;DejaVu Sans Mono&#39;,monospace" font-size="13" font-weight="600" letter-spacing="3.4" fill="#8C8C97">PYTHON BACKEND / AI ENGINEER</text>
+  <text x="836" y="67" text-anchor="end" font-family="ui-monospace,&#39;SF Mono&#39;,SFMono-Regular,Menlo,Consolas,&#39;Liberation Mono&#39;,&#39;DejaVu Sans Mono&#39;,monospace" font-size="13" letter-spacing="1.6" fill="#5E5E68">t.me/web3daemon</text>
+
+  <text x="64" y="176" font-family="ui-monospace,&#39;SF Mono&#39;,SFMono-Regular,Menlo,Consolas,&#39;Liberation Mono&#39;,&#39;DejaVu Sans Mono&#39;,monospace" font-size="72" font-weight="700" letter-spacing="-1" fill="#FF1F2E" filter="url(#soft)" opacity="0.6">
+    web3daemon
+    
+  </text>
+  <text x="64" y="176" font-family="ui-monospace,&#39;SF Mono&#39;,SFMono-Regular,Menlo,Consolas,&#39;Liberation Mono&#39;,&#39;DejaVu Sans Mono&#39;,monospace" font-size="72" font-weight="700" letter-spacing="-1" fill="#F4F1EC">web<tspan fill="#FF3B45">3</tspan>daemon</text>
+
+  <rect x="64" y="208" width="772" height="1" fill="url(#rule)"></rect>
+  <rect x="64" y="206.5" width="140" height="3" fill="url(#sweep)" filter="url(#tight)" opacity="0.85">
+    
+  </rect>
+  <rect x="64" y="207.5" width="140" height="1.5" fill="url(#sweep)">
+    
+  </rect>
+
+  <text x="64" y="250" font-family="ui-monospace,&#39;SF Mono&#39;,SFMono-Regular,Menlo,Consolas,&#39;Liberation Mono&#39;,&#39;DejaVu Sans Mono&#39;,monospace" font-size="14" letter-spacing="1.1" fill="#8A8A95">realtime market data · async APIs · LLM systems</text>
+  <rect x="490" y="238" width="9" height="15" fill="#FF3B45"></rect>
+</svg>
